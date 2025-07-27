@@ -1,0 +1,52 @@
+{
+  "name": "@claude-agent/platform",
+  "version": "1.0.0",
+  "description": "General-purpose multi-agent coordination platform for Claude Code sub-agents",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/.bin/jest",
+    "demo:hello-world": "node demos/01-hello-world/index.js",
+    "demo:math-pipeline": "node demos/02-math-pipeline/index.js",
+    "demo:document-processor": "node demos/03-document-processor/index.js",
+    "demo:all": "npm run demo:hello-world && npm run demo:math-pipeline && npm run demo:document-processor",
+    "lint": "eslint src/**/*.js",
+    "format": "prettier --write src/**/*.js demos/**/*.js"
+  },
+  "keywords": [
+    "claude",
+    "ai",
+    "agents",
+    "coordination",
+    "multi-agent",
+    "framework",
+    "platform",
+    "orchestration"
+  ],
+  "author": "Claude Agent Platform Contributors",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "yaml": "^2.3.4",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "eslint": "^8.56.0",
+    "prettier": "^3.1.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-org/claude-agent-platform.git"
+  },
+  "files": [
+    "src",
+    "docs",
+    "demos",
+    "README.md",
+    "LICENSE"
+  ]
+}
