@@ -87,6 +87,8 @@ Update the repository URL and author information in `package.json`.
 
 ## Platform vs. Original Project
 
+This platform emanates from an original project, built specifically for the establishment of data pipelines using Claude Code Sub agents + git worktrees.
+
 ### What's Different
 - **No data pipeline specifics**: Removed Kafka/Airflow/dbt references
 - **No git worktree management**: Simplified to pure agent coordination
