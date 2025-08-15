@@ -1,15 +1,33 @@
 # Claude Agent Platform
 
-A general-purpose multi-agent coordination platform built on Anthropic's Claude Code sub-agent architecture. This platform provides a reusable framework for coordinating multiple AI agents across different domains and management approaches.
+A **simulation and demonstration platform** for multi-agent coordination patterns inspired by Anthropic's Claude Code sub-agent architecture. This platform provides a conceptual framework and working examples of how multiple AI agents could be coordinated across different domains.
+
+**Important**: This is a simulation platform that demonstrates coordination patterns rather than implementing actual Claude Code sub-agents. Real sub-agents would use Claude Code's Task Tool with separate git worktrees.
 
 ## Overview
 
-Claude Agent Platform enables you to:
-- 🤖 Coordinate multiple Claude Code sub-agents with different specializations
-- 🔌 Use pluggable management frameworks for different domains
-- 🎯 Apply the same infrastructure to diverse use cases (data pipelines, development workflows, ML training, etc.)
+Claude Agent Platform demonstrates how to:
+- 🤖 **Simulate** multi-agent coordination patterns and workflows
+- 🔌 Design pluggable management frameworks for different domains  
+- 🎯 Apply coordination patterns to diverse use cases (data pipelines, development workflows, ML training, etc.)
 - 📊 Monitor and manage agent coordination through a unified event system
-- 🧩 Extend functionality through a plugin architecture
+- 🧩 Build extensible architecture for multi-agent systems
+
+## What This Platform Is
+
+**This is a conceptual demonstration**, not a live multi-agent system. It simulates what coordinating multiple Claude Code sub-agents might look like by:
+
+- **Simulating agent work** with `setTimeout()` and realistic result generation
+- **Demonstrating coordination patterns** (sequential, parallel, hybrid workflows)
+- **Showing framework architecture** for building real multi-agent systems
+- **Providing working examples** of common coordination scenarios
+
+## What This Platform Is NOT
+
+- ❌ **Not using real Claude Code sub-agents** - no actual Task Tool calls
+- ❌ **Not creating git worktrees** - no real agent isolation  
+- ❌ **Not running actual AI models** - just simulated responses
+- ❌ **Not a production system** - it's an architectural blueprint
 
 ## Quick Start
 
@@ -182,7 +200,7 @@ MIT License - see [LICENSE](LICENSE) file.
 
 ## Acknowledgments
 
-Built on [Anthropic's Claude Code](https://claude.ai/code) sub-agent architecture.
+Inspired by [Anthropic's Claude Code](https://claude.ai/code) sub-agent architecture, but implemented as a simulation for learning and demonstration purposes.
 
 ---
 

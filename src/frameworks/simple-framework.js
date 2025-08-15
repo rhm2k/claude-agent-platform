@@ -74,12 +74,6 @@ export class SimpleFramework extends BaseFramework {
       
       const status = await this.coordinator.getAgentStatus(agentId);
       workflow.results[task.agent] = status.results;
-      
-      // Pass results to next agent if needed
-      if (i < workflow.tasks.length - 1 && task.passResults) {
-        const nextAgentId = `${workflow.id}-${workflow.tasks[i + 1].agent}`;
-        await this.sendMessage(agentId, nextAgentId, status.results);
-      }
     }
   }
 

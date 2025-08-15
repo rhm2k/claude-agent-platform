@@ -32,9 +32,10 @@ async function runMathPipelineDemo() {
     console.log(chalk.gray(`  Active agents: ${activeAgents}`));
   });
 
-  coordinator.on('agent:completed', ({ agentId }) => {
+  coordinator.on('agent:completed', ({ agentId, results }) => {
     activeAgents--;
     console.log(chalk.cyan(`✓ Agent completed: ${agentId}`));
+    console.log(chalk.gray(`  Output: ${results.output}`));
     console.log(chalk.gray(`  Remaining agents: ${activeAgents}`));
   });
 
